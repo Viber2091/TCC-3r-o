@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    background: fixed;
+    background-color: rgb(107, 194, 163);
+    height: 50px;
+}
+
+
+
+body{
+    background: fixed;
+    background-color: rgb(162, 238, 212);
+    
+}
+
+h1{
+    position: absolute;
+}
+
+img{
+    display: flex;
+    width: 480px;
+    margin-top: 130px;
+    margin-left: 710px;
+}
