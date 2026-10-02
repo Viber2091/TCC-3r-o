@@ -1,0 +1,51 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    display: flex;
+    background: fixed;
+    background-color: #F0F7F4;
+    height: 60px;
+    border-bottom: 3px solid #C8DDD7;
+    justify-content: space-between;
+}
+
+img{
+    display: flex;
+    width: 100px;
+    
+}
+
+nav{
+    display: flex;
+    align-items: left;
+    gap: 50px;
+ 
+}
+
+nav button {
+    padding: 5px 5px;
+    cursor: crosshair;
+ }
+
+body{
+    background: fixed;
+    background-color: #F0F7F4;
+    
+}
+
+h1{
+    font-family: "Russo One", sans-serif ;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+
+}
