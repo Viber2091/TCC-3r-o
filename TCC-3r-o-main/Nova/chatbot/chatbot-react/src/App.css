@@ -1,0 +1,65 @@
+.chat-page {
+  position: relative;
+  width: 100vw;
+  height: 150vh;
+  overflow: hidden;
+  background: #060a08;
+  cursor: cell;
+}
+
+.chat-page__background {
+  position: absolute;
+  inset: -20%;
+}
+
+.chat-page__background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 35% 40%, rgba(74, 116, 152, 0.55) 0%, transparent 42%),
+    radial-gradient(circle at 65% 60%, rgba(22, 101, 63, 0.5) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, #060a08 0%, #060a08 100%);
+  filter: blur(70px);
+  animation: drift 14s ease-in-out infinite alternate;
+}
+
+.chat-page__background::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 46vw;
+  height: 46vw;
+  max-width: 620px;
+  max-height: 620px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(79, 214, 140, 0.35);
+  box-shadow:
+    0 0 60px 10px rgba(47, 184, 106, 0.35),
+    inset 0 0 60px 10px rgba(47, 184, 106, 0.25);
+  animation: pulse 5s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(6%, -6%) scale(1.2);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+
+}
